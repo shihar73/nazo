@@ -65,16 +65,26 @@ $(document).ready(function(){
             // }
         })
     })
-        
- })
-function send(){
-    let num = document.querySelector("#num").value
+      
+    $('.submit-btn2').click(function(event){
+        event.preventDefault()
+        console.log("clicked")
+    })
     
-    if (num.length === 10){
 
-        console.log(num)
-    }
-    console.log(num.toString().length)
 
-}
+
+ })
+// function send(){
+//     let num = document.querySelector("#num").value
+    
+//     if (num.length === 10){
+
+//         console.log(num)
+//     }
+//     console.log(num.toString().length)
+
+// }
+
+
  
