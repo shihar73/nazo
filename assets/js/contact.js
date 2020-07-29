@@ -67,3 +67,14 @@ $(document).ready(function(){
     })
         
  })
+function send(){
+    let num = document.querySelector("#num").value
+    
+    if (num.length === 10){
+
+        console.log(num)
+    }
+    console.log(num.toString().length)
+
+}
+ 
