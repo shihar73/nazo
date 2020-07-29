@@ -23,19 +23,19 @@ $(document).ready(function(){
             },
             messages: {
                 name: {
-                    required: "come on, you have a name, don't you?",
+                    required: "Please, Enter your name",
                     minlength: "your name must consist of at least 3 characters"
                 },
                 subject: {
-                    required: "come on, you have a tree, don't you?",
+                    required: "Please, Enter your trees",
                     minlength: "your must want 1 tree"
                 },
                 number: {
-                    required: "come on, you have a number, don't you?",
+                    required: "Please, Enter your number",
                     minlength: "your Number must consist of at least 10 characters"
                 },
                 message: {
-                    required: "come on, you have a address, don't you?",
+                    required: "Please, Enter your addres",
                     minlength: "your name must consist of at least 4 characters"
                 }
             },
