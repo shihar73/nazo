@@ -1,85 +1,69 @@
 $(document).ready(function(){
-    
-    (function($) {
-        "use strict";
-
-    
-    jQuery.validator.addMethod('answercheck', function (value, element) {
-        return this.optional(element) || /^\bcat\b$/.test(value)
-    }, "type the correct answer -_-");
-
-    // validate contactForm form
     $(function() {
-        $('#contactForm').validate({
+        $('#contact-form').validate({
             rules: {
                 name: {
                     required: true,
-                    minlength: 2
+                    minlength: 3
                 },
                 subject: {
                     required: true,
-                    minlength: 3
+                    number:true,
+                    minlength: 1
                 },
                 number: {
                     required: true,
+                    number:true,
                     minlength: 10
-                },
-                email: {
-                    required: true,
-                    email: true
                 },
                 message: {
                     required: true,
-                    minlength: 20
+                    minlength: 4
                 }
             },
             messages: {
                 name: {
                     required: "come on, you have a name, don't you?",
-                    minlength: "your name must consist of at least 2 characters"
+                    minlength: "your name must consist of at least 3 characters"
                 },
                 subject: {
-                    required: "come on, you have a subject, don't you?",
-                    minlength: "your subject must consist of at least 4 characters"
+                    required: "come on, you have a tree, don't you?",
+                    minlength: "your must want 1 tree"
                 },
                 number: {
                     required: "come on, you have a number, don't you?",
-                    minlength: "your Number must consist of at least 5 characters"
-                },
-                email: {
-                    required: "no email, no message"
+                    minlength: "your Number must consist of at least 10 characters"
                 },
                 message: {
-                    required: "um...yea, you have to write something to send this form.",
-                    minlength: "thats all? really?"
+                    required: "come on, you have a address, don't you?",
+                    minlength: "your name must consist of at least 4 characters"
                 }
             },
-            submitHandler: function(form) {
-                $(form).ajaxSubmit({
-                    type:"POST",
-                    data: $(form).serialize(),
-                    url:"contact_process.php",
-                    success: function() {
-                        $('#contactForm :input').attr('disabled', 'disabled');
-                        $('#contactForm').fadeTo( "slow", 1, function() {
-                            $(this).find(':input').attr('disabled', 'disabled');
-                            $(this).find('label').css('cursor','default');
-                            $('#success').fadeIn()
-                            $('.modal').modal('hide');
-		                	$('#success').modal('show');
-                        })
-                    },
-                    error: function() {
-                        $('#contactForm').fadeTo( "slow", 1, function() {
-                            $('#error').fadeIn()
-                            $('.modal').modal('hide');
-		                	$('#error').modal('show');
-                        })
-                    }
-                })
-            }
+            // submitHandler: function(form) {
+            //     $(form).ajaxSubmit({
+            //         type:"POST",
+            //         data: $(form).serialize(),
+            //         url:"contact_process.php",
+            //         success: function() {
+            //             $('#contactForm :input').attr('disabled', 'disabled');
+            //             $('#contactForm').fadeTo( "slow", 1, function() {
+            //                 $(this).find(':input').attr('disabled', 'disabled');
+            //                 $(this).find('label').css('cursor','default');
+            //                 $('#success').fadeIn()
+            //                 $('.modal').modal('hide');
+		    //             	$('#success').modal('show');
+            //             })
+            //         },
+            //         error: function() {
+            //             $('#contactForm').fadeTo( "slow", 1, function() {
+            //                 $('#error').fadeIn()
+            //                 $('.modal').modal('hide');
+		    //             	$('#error').modal('show');
+            //             })
+            //         }
+            //     })
+            // }
         })
     })
         
  })(jQuery)
-})
