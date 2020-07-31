@@ -3785,8 +3785,8 @@ hr {
 
 /* line 124, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_h1-hero.scss */
 .slider-area .video-icon a {
-  background: #fff;
-  color: #ff1313;
+  background: rgb(120, 233, 55);
+  color: #472c2c;
   width: 60px;
   height: 60px;
   display: inline-block;
