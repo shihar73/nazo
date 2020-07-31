@@ -39,7 +39,13 @@ $(document).ready(function(){
                     minlength: "your name must consist of at least 4 characters"
                 }
             },
-            // submitHandler: function(form) {
+           
+        })
+    })
+
+ })
+
+  // submitHandler: function(form) {
             //     $(form).ajaxSubmit({
             //         type:"POST",
             //         data: $(form).serialize(),
@@ -63,18 +69,13 @@ $(document).ready(function(){
             //         }
             //     })
             // }
-        })
-    })
-      
-    $('.submit-btn2').click(function(event){
-        event.preventDefault()
-        console.log("clicked")
-    })
+
+  // $('.submit-btn2').click(function(event){
+    //     event.preventDefault()
+    //     console.log("clicked")
+    // })
     
 
-
-
- })
 // function send(){
 //     let num = document.querySelector("#num").value
     
