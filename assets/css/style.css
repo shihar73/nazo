@@ -3721,7 +3721,7 @@ hr {
   font-size: 27px;
   color: #fff;
   font-family: "Muli", sans-serif;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -5350,6 +5350,31 @@ hr {
   color: #fff;
   font-size: 14px;
   padding-left: 16px;
+}
+.main-soc-icon1{
+  font-size: larger;
+  margin-left: 5rem;
+}
+
+.main-soc-icons > a > i{
+
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+}
+.main-soc-icons > a:hover i{
+
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
 }
 
 /* line 125, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
