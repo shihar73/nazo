@@ -3711,7 +3711,7 @@ hr {
 @media (max-width: 575px) {
   /* line 63, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_h1-hero.scss */
   .slider-area .hero__caption h1 {
-    font-size: 29px;
+    font-size: 32px;
     line-height: 1.5;
   }
 }
@@ -3721,7 +3721,7 @@ hr {
   font-size: 27px;
   color: #fff;
   font-family: "Muli", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3742,7 +3742,7 @@ hr {
   /* line 88, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_h1-hero.scss */
   .slider-area .hero__caption p {
     padding-right: 0px;
-    font-size: 15px;
+    font-size: 22px;
   }
 }
 
@@ -5113,7 +5113,7 @@ hr {
   /* line 3, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_testimonial.scss */
   .testimonial-area .testimonial-caption {
     height: 343px;
-    padding: 82px 18px 20px 18px;
+    padding: 0px 18px 20px 18px;
   }
 }
 
@@ -5163,7 +5163,7 @@ hr {
 .h1-testimonial-active button.slick-arrow {
   position: absolute;
   border: 0;
-  padding: 10px;
+  padding: 5px;
   cursor: pointer;
   background: none;
   -webkit-transition: 0.4s;
