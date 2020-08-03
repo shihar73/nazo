@@ -3711,7 +3711,7 @@ hr {
 @media (max-width: 575px) {
   /* line 63, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_h1-hero.scss */
   .slider-area .hero__caption h1 {
-    font-size: 32px;
+    font-size: 34px;
     line-height: 1.5;
   }
 }
@@ -3742,7 +3742,7 @@ hr {
   /* line 88, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_h1-hero.scss */
   .slider-area .hero__caption p {
     padding-right: 0px;
-    font-size: 22px;
+    font-size: 17px;
   }
 }
 
