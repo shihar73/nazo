@@ -52,7 +52,7 @@ $(document).ready(function(){
                 $('#contact-form').submit((e)=>{
                     e.preventDefault()
                     $.ajax({
-                        url:"https://script.google.com/macros/s/AKfycbz3v-JvlU-i3u6qFUmhtVwIFPVUMuBEBv0Y3Z6i_A/exec",
+                        url:"https://script.google.com/macros/s/AKfycbx-dJhXR9TWvsAk-n5VRrZS39AEjlMlG2FG6w2xtg/exec",
                         data:$("#contact-form").serialize(),
                         method:"post",
                         success:function (response){
