@@ -1,91 +1,81 @@
 $(document).ready(function(){
     $(function() {
+        "use strict";
+
+
+        jQuery.validator.addMethod('answercheck', function (value, element) {
+            return this.optional(element) || /^\bcat\b$/.test(value)
+        }, "type the correct answer -_-");
+
+        // validate contactForm form
         $('#contact-form').validate({
             rules: {
-                name: {
+                Name: {
                     required: true,
                     minlength: 3
                 },
-                subject: {
+                Trees: {
                     required: true,
                     number:true,
                     minlength: 1
                 },
-                number: {
+                Number: {
                     required: true,
                     number:true,
                     minlength: 10
                 },
-                message: {
+                Address: {
                     required: true,
                     minlength: 4
                 }
             },
             messages: {
-                name: {
+                Name: {
                     required: "Please, Enter your name",
                     minlength: "your name must consist of at least 3 characters"
                 },
-                subject: {
+                Trees: {
                     required: "Please, Enter your trees",
                     minlength: "your must want 1 tree"
                 },
-                number: {
+                Number: {
                     required: "Please, Enter your number",
                     minlength: "your Number must consist of at least 10 characters"
                 },
-                message: {
+                Address: {
                     required: "Please, Enter your addres",
                     minlength: "your name must consist of at least 4 characters"
                 }
             },
+
+            submitHandler: function(form){
+                $('#contact-form').submit((e)=>{
+                    e.preventDefault()
+                    $.ajax({
+                        url:"https://script.google.com/macros/s/AKfycbz3v-JvlU-i3u6qFUmhtVwIFPVUMuBEBv0Y3Z6i_A/exec",
+                        data:$("#contact-form").serialize(),
+                        method:"post",
+                        success:function (response){
+                            alert("Submitted successfully")
+                            window.location.reload()
+                            //window.location.href="https://google.com"
+                        },
+                        error:function (err){
+                            alert("Something Error")
+                
+                        }
+                    })
+                })
+            }
+
+            
+        
            
         })
     })
-
+   
  })
 
-  // submitHandler: function(form) {
-            //     $(form).ajaxSubmit({
-            //         type:"POST",
-            //         data: $(form).serialize(),
-            //         url:"contact_process.php",
-            //         success: function() {
-            //             $('#contactForm :input').attr('disabled', 'disabled');
-            //             $('#contactForm').fadeTo( "slow", 1, function() {
-            //                 $(this).find(':input').attr('disabled', 'disabled');
-            //                 $(this).find('label').css('cursor','default');
-            //                 $('#success').fadeIn()
-            //                 $('.modal').modal('hide');
-		    //             	$('#success').modal('show');
-            //             })
-            //         },
-            //         error: function() {
-            //             $('#contactForm').fadeTo( "slow", 1, function() {
-            //                 $('#error').fadeIn()
-            //                 $('.modal').modal('hide');
-		    //             	$('#error').modal('show');
-            //             })
-            //         }
-            //     })
-            // }
-
-  // $('.submit-btn2').click(function(event){
-    //     event.preventDefault()
-    //     console.log("clicked")
-    // })
-    
-
-// function send(){
-//     let num = document.querySelector("#num").value
-    
-//     if (num.length === 10){
-
-//         console.log(num)
-//     }
-//     console.log(num.toString().length)
-
-// }
-
+ 
 
  
