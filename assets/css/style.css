@@ -8684,3 +8684,10 @@ del {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+@media (max-width: 575px) {
+  /* line 77, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_services_section.scss */
+  .news-video{
+    height: 225px;
+  }
+}
